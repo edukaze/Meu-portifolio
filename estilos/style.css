@@ -30,7 +30,17 @@ body{
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto)
+  
 }
+body.escuro {
+  --fundo-principal: #1e1e1e;
+  --texto: #e0e0e0;
+  --texto-inverso: #222222;
+  --destaque: #B85600;
+  --destaque-inverso: #FF9333;
+  --fundo-card: #2a2a2a;
+}
+
 
 header{
   background-color: var(--destaque);
@@ -39,6 +49,7 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 nav#menu ul{
   list-style: none;
@@ -60,31 +71,37 @@ nav#menu a:hover{
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
-
-div#perfil{
-  display: flex;
-  flex-flow: column wrap;
+main{
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: auto auto;
   justify-content: center;
-  align-items: center;
+  gap: 5px;
+  width: 100vw;
+  max-width: 100vw;
+}
+div#perfil{
+  grid-column: 2;
+  grid-row: 1;
+  padding: 8px;
   background-color:var(--fundo-card);
   border-radius: 10px;
-  width: 90vw;
   margin: auto;
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.247);
- 
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 div#perfil img{
-  object-fit: top center;
+  display: block;
+  margin: 20px auto 20px auto;
   width: 180px;          
   height: 180px;  
   border-radius: 50%;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  
   outline: 4px solid var(--destaque);
   outline-offset: 2px;
 }
 div#perfil h1{
-  align-self: flex-start;
+  
   color: var(--destaque);
   margin: 0px 0px 10px 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199)
