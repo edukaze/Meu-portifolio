@@ -103,10 +103,12 @@ div#perfil img{
   outline: 4px solid var(--destaque);
   outline-offset: 2px;
 }
-div#perfil h1, div#detalhes h1{
+div#perfil h1, h1{
   color: var(--destaque);
+  font-size: 2.2em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199);
   margin-top: 10px;
+  margin-bottom: 10px ;
 }
 div#perfil p{
   padding:10px;
@@ -118,16 +120,6 @@ div#perfil p{
   width: 100%;
 }
 
-div.detalhes{
-  grid-column: 2;
-  grid-row: 2;
-  padding: 8px;
-  background-color:var(--fundo-card);
-  border-radius: 10px;
-  
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.247);
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
 
 nav#rede ul{
   list-style: none; 
@@ -149,18 +141,26 @@ nav#rede a:hover{
   color: var(--destaque-inverso);
 }
 
-section.skills{
-  display: grid;
+section#skills{
+  grid-column: 2;
+  padding: 8px;
+  background-color:var(--fundo-card);
+  border-radius: 10px;
   gap: 18px 28px;
-  grid-template-columns: 1fr;
-  margin: 20px 0px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.247);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+div.skill{
+  margin-bottom: 15px;
 }
 div.titulo{
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 800;
+  font-size: 1.3em;
   margin-bottom: 10px;
+  margin-top: 10px;
   
 }
 div.titulo > div.esqueda{
@@ -184,4 +184,48 @@ div.cor-barra{
   background:var(--barra-cor);
   border-radius: inherit;
   transition: width .8s ease; 
+}
+
+section#formacoes{
+  grid-column: 2;
+  padding: 8px;
+  background-color:var(--fundo-card);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.247);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+ div.titulo-formacao{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 95%;
+  font-weight: 800;
+  margin: 10px auto 10px auto;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 20px;
+  font-size: 1.3em;
+  background-color: var(--barra-fundo);
+  border-left: 15px solid var(--destaque-inverso);
+  transition: /*fazer a animação mais suave e na mesma velocidade sempre */
+    border-left-width 0.3s linear,
+    border-left-color 0.3s linear,
+    padding-left 0.3s linear;
+}
+div.titulo-formacao:hover{
+  border-left-width: 20px; 
+  border-left-color: var(--destaque);  
+  padding-left: 20px;
+}
+.data{
+  font-size: 0.8em;
+
+}
+.instituicao{
+  color: var(--destaque-inverso);
+  font-weight: 800;
+}
+.curso{
+  font-weight: normal;
 }
