@@ -22,6 +22,26 @@ botao.addEventListener('click', () => {
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
 });
 
+
+//saiba mais texto adicional ao clicar
+
+const botoes = document.querySelectorAll("button.saiba-mais");
+
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    const extraTexto = botao.nextElementSibling; // pega o <p> logo depois do botão
+    extraTexto.classList.toggle("mostrar"); // alterna entre mostrar/ocultar
+
+    // opcional: trocar o texto do botão
+    if (extraTexto.classList.contains("mostrar")) {
+      botao.textContent = "Mostrar menos...";
+    } else {
+      botao.textContent = "Saiba mais...";
+    }
+  });
+});
+
+
 // Scroll suave para links de navegação
 const navLinks = document.querySelectorAll('#menu ul a.link');
 navLinks.forEach(link => {

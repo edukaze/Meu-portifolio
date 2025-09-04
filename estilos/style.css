@@ -49,6 +49,11 @@ body.escuro {
 
 
 header{
+  position: fixed;      /* fixa no topo */
+  top: 0;               /* gruda no topo da página */
+  left: 0;
+  width: 100%;          /* ocupa a largura inteira */
+  z-index: 1000;
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
@@ -83,6 +88,7 @@ main{
   grid-template-rows: auto auto;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 70px;
   row-gap: 25px;
 }
 div#perfil{
@@ -141,7 +147,10 @@ nav#rede a:hover{
   color: var(--destaque-inverso);
 }
 
-section#skills{
+/*ABA DE SKILL*/
+
+
+section#skills, section#formacoes, section#projetos{
   grid-column: 2;
   padding: 8px;
   background-color:var(--fundo-card);
@@ -186,14 +195,9 @@ div.cor-barra{
   transition: width .8s ease; 
 }
 
-section#formacoes{
-  grid-column: 2;
-  padding: 8px;
-  background-color:var(--fundo-card);
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.247);
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
+
+/* ABA DE FORMAÇÕES*/
+
 
  div.titulo-formacao{
   display: flex;
@@ -228,4 +232,65 @@ div.titulo-formacao:hover{
 }
 .curso{
   font-weight: normal;
+}
+
+/*ABA DE PROJETOS*/
+div.projeto{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 30px;
+  background: var(--barra-fundo);
+  border-radius: 10px;
+  border-left:10px solid var(--destaque-inverso);
+  transition: 
+  border-left-width 0.3s linear,
+  border-left-color 0.3s linear,
+  padding-left 0.3s linear;
+}
+div.projeto:hover{
+  border-left-width: 15px; 
+  border-left-color: var(--destaque);  
+  padding-left: 15px;
+}
+div.projeto >img{
+  width: 98%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+div.text{
+  text-align: start;
+  font-size: 1.3em;
+  line-height: 25px;
+  margin: 10px 0px 10px 0px;
+}
+p.extra-texto{
+  display: none;
+  margin-top: 10px;
+  line-height: 1.5em;
+  color: var(--texto);
+}
+p.extra-texto.mostrar{
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+button.saiba-mais{
+  background: none;
+  border: none;
+  margin-top: 10px;
+  color: var(--texto);
+  font-weight: bold;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+button.saiba-mais:hover{
+  text-decoration: underline;
+  color: var(--destaque-inverso);
 }
