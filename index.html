@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width:992px)">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
@@ -34,147 +36,155 @@
             </nav>
         </div>
         <!--SKILLS-->
-            <section id="skills" role="skills">
-               <h1><i class="fa-solid fa-brain"></i>Minhas skills</h1>
-            <!--coluna 1 -->
-            <div class="skill" style="--porcentagem: 90;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-code"></i>HTML5</span>
-                    <span class="porcentagem">90%</span>
-                </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+            <section id="detalhes">
+                <section id="skills" role="skills">
+                   <h1><i class="fa-solid fa-brain"></i>Minhas skills</h1>
+                <!--coluna 1 -->
+                <div class="colunas">
+                    <div class="coluna">
+                        <div class="skill" style="--porcentagem: 90;">
+                            <div class="titulo">
+                                <span class="esquerda"><i class="fa-solid fa-code"></i>HTML5</span>
+                                <span class="porcentagem">90%</span>
+                            </div>
+                            <div class="barra-fundo">
+                                <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill" style="--porcentagem: 75;">
+                            <div class="titulo">
+                                <span class="esquerda"><i class="fa-solid fa-code"></i>CSS3</span>
+                                <span class="porcentagem">75%</span>
+                            </div>
+                            <div class="barra-fundo">
+                                <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill" style="--porcentagem: 70;">
+                            <div class="titulo">
+                                <span class="esquerda"><i class="fa-solid fa-code"></i>JavaScript</span>
+                                <span class="porcentagem">70%</span>
+                            </div>
+                            <div class="barra-fundo">
+                                <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill" style="--porcentagem: 60;">
+                            <div class="titulo">
+                                <span class="esquerda"><i class="fa-solid fa-code"></i>PHP</span>
+                                <span class="porcentagem">60%</span>
+                            </div>
+                            <div class="barra-fundo">
+                                <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                                </div>
+                            </div>
+                        </div>
+                
                     </div>
-                </div>    
-            </div>
-            <div class="skill" style="--porcentagem: 75;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-code"></i>CSS3</span>
-                    <span class="porcentagem">75%</span>
-                </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+                    <!--coluna 2 -->
+                        <div class="coluna">
+                            <div class="skill" style="--porcentagem: 95;">
+                                <div class="titulo">
+                                    <span class="esquerda"><i class="fa-solid fa-comments"></i>Comunicação</span>
+                                    <span class="porcentagem">95%</span>
+                                </div>
+                                <div class="barra-fundo">
+                                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill" style="--porcentagem: 80;">
+                                <div class="titulo">
+                                    <span class="esquerda"><i class="fa-solid fa-shuffle"></i>Adaptabilidade</span>
+                                    <span class="porcentagem">80%</span>
+                                </div>
+                                <div class="barra-fundo">
+                                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill" style="--porcentagem: 90;">
+                                <div class="titulo">
+                                    <span class="esquerda"><i class="fa-solid fa-people-group"></i>Trabalho em equipe</span>
+                                    <span class="porcentagem">90%</span>
+                                </div>
+                                <div class="barra-fundo">
+                                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill" style="--porcentagem: 80;">
+                                <div class="titulo">
+                                    <span class="esquerda"><i class="fa-solid fa-exclamation"></i>Solução de Problema</span>
+                                    <span class="porcentagem">80%</span>
+                                </div>
+                                <div class="barra-fundo">
+                                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>    
-            </div>
-            <div class="skill" style="--porcentagem: 70;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-code"></i>JavaScript</span>
-                    <span class="porcentagem">70%</span>
-                </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+                </section>
+                           <!--FORMAÇÃO-->
+                <section id="formacoes" role="formação">
+                    <h1><i class="fa-solid fa-graduation-cap"></i>Formação</h1>
+                    <div class="formacao">
+                        <div class="titulo-formacao">
+                            <p class="data">2019-2021</p>
+                            <p class="instituicao">IFPE - Instituto Federal de Pernambuco</p>
+                            <p class ='curso'>IPI - Informática Para Internet</p>
+                        </div>
                     </div>
-                </div>    
-            </div>
-            <div class="skill" style="--porcentagem: 60;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-code"></i>PHP</span>
-                    <span class="porcentagem">60%</span>
-                </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                           </section>
+                           <!--PROJETOS-->
+                           <section id="projetos" role="projetos">
+                <h1><i class="fa-solid fa-diagram-project"></i>Projetos</h1>
+                <div class="projeto">
+                    <a href="https://edukaze.github.io/Projeto-login/" target="_blank" class="link-imagem" id="login"><img src="imagens/projeto-login.jpg" alt="projeto login"></a>
+                    <div class="text">
+                        <p class="ano">2025</p>
+                        <h2>Projeto Login</h2>
+                        <p>Projeto Construido para treina responsividade e formulários em uma das telas mais populares em sistemas.</p>
+                        <button class="saiba-mais">Saiba mais...</button>
+                        <p class="extra-texto">Para construir essa página, utilizei HTML5 para estruturar o conteúdo semântico, garantindo acessibilidade e clareza no código. O CSS3 foi aplicado para estilização avançada, incluindo variáveis de cores, bordas arredondadas, sombras, flexbox e grid para organizar os elementos de forma responsiva. Para interação, o JavaScript controla o botão “Saiba mais”, que alterna a exibição de texto extra, a troca dinâmica de tema claro/escuro e o scroll suave para navegação interna. Também usei Font Awesome para ícones, que dão suporte visual consistente e melhoram a experiência do usuário</p>
                     </div>
-                </div>    
-            </div>
-            
-            <!--coluna 2 -->
-            <div class="skill" style="--porcentagem: 95;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-comments"></i>Comunicação</span>
-                    <span class="porcentagem">95%</span>
                 </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+                <div class="projeto">
+                    <a href="https://edukaze.github.io/projeto-social" target="_blank" class="link-imagem"><img src="imagens/projeto-04-links.jpg" alt="projeto links"></a>
+                    <div class="text">
+                        <p class="ano">2025</p>
+                        <h2>Projeto Links</h2>
+                        <p>Projeto que simula um celular com links para várias redes sociais, permitindo navegar entre páginas dentro do próprio dispositivo usando apenas HTML e CSS.</p>
+                        <button class="saiba-mais">Saiba mais...</button>
+                        <p class="extra-texto">O principal destaque do projeto é o uso do iframe, que permite carregar diferentes páginas sem sair do layout do celular. Os ícones das redes sociais funcionam como botões que trocam o conteúdo exibido no iframe. Todo o estilo e posicionamento do celular e dos ícones são feitos com CSS, garantindo um efeito visual interativo e responsivo.</p>
                     </div>
-                </div>    
-            </div>
-            <div class="skill" style="--porcentagem: 80;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-shuffle"></i>Adaptabilidade</span>
-                    <span class="porcentagem">80%</span>
                 </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                <div class="projeto">
+                    <a href="https://edukaze.github.io/projeto-cordel" target="_blank" class="link-imagem"><img src="imagens/projeto-02-cordel.jpg" alt="projeto Cordel"></a>
+                    <div class="text">
+                        <p class="ano">2025</p>
+                        <h2>Projeto Cordel</h2>
+                        <p>Um site simples que apresenta a poesia “Cordel Moderno”, combinando tipografia tradicional com um layout limpo e agradável, destacando as estrofes em seções alternadas.</p>
+                        <button class="saiba-mais">Saiba mais...</button>
+                        <p class="extra-texto">O projeto utiliza HTML5 para estruturar o conteúdo em seções (section) e CSS3 para aplicar o efeito de parallax nas seções com imagens de fundo. Esse efeito cria uma sensação de profundidade, mantendo o conteúdo do texto fixo enquanto o fundo se move ao rolar a página.</p>
                     </div>
-                </div>    
-            </div>
-            <div class="skill" style="--porcentagem: 90;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-people-group"></i>Trabalho em equipe</span>
-                    <span class="porcentagem">90%</span>
                 </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                <div class="projeto">
+                    <a href="https://edukaze.github.io/projeto-android" target="_blank" class="link-imagem"><img src="imagens/projeto-03-android.jpg" alt="projeto android"></a>
+                    <div class="text">
+                        <p class="ano">2025</p>
+                        <h2>Projeto Android</h2>
+                        <p>Projeto de artigo web responsivo, que apresenta a história do mascote do Android, combinando textos, imagens e vídeos de forma organizada e visualmente atraente.</p>
+                        <button class="saiba-mais">Saiba mais...</button>
+                        <p class="extra-texto">O projeto foi desenvolvido utilizando HTML semântico para estruturar conteúdos como header, main, article, aside e footer, garantindo acessibilidade e SEO. O CSS aplicou gradientes, variáveis CSS para cores e fontes personalizadas, e responsividade com max-width e media queries para imagens e vídeos. Além disso, o layout centralizado e sombras sutis conferem destaque ao conteúdo. O projeto foi realizado para pratica tags e a criação do primeiro conteúdo </p>
                     </div>
-                </div>    
-            </div>
-            <div class="skill" style="--porcentagem: 80;">
-                <div class="titulo">
-                    <span class="esquerda"><i class="fa-solid fa-exclamation"></i>Solução de Problema</span>
-                    <span class="porcentagem">80%</span>
                 </div>
-                <div class="barra-fundo">
-                    <div class="cor-barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
-                    </div>
-                </div>    
-            </div>
+                           </section>
             </section>
-           <!--FORMAÇÃO-->
-            <section id="formacoes" role="formação">
-                <h1><i class="fa-solid fa-graduation-cap"></i>Formação</h1>
-                <div class="formacao">
-                    <div class="titulo-formacao">
-                        <p class="data">2019-2021</p>
-                        <p class="instituicao">IFPE - Instituto Federal de Pernambuco</p>
-                        <p class ='curso'>IPI - Informática Para Internet</p>     
-                    </div>
-                </div>
-           </section>
-           <!--PROJETOS-->
-           <section id="projetos" role="projetos">
-            <h1><i class="fa-solid fa-diagram-project"></i>Projetos</h1>
-            <div class="projeto">
-                <img src="imagens/projeto-login.jpg" alt="projeto login">
-                <div class="text">
-                    <p class="ano">2025</p>
-                    <h2>Projeto Login</h2>
-                    <p>Projeto Construido para treina responsividade e formulários em uma das telas mais populares em sistemas.</p>
-                    <button class="saiba-mais">Saiba mais...</button>
-                    <p class="extra-texto">Para construir essa página, utilizei HTML5 para estruturar o conteúdo semântico, garantindo acessibilidade e clareza no código. O CSS3 foi aplicado para estilização avançada, incluindo variáveis de cores, bordas arredondadas, sombras, flexbox e grid para organizar os elementos de forma responsiva. Para interação, o JavaScript controla o botão “Saiba mais”, que alterna a exibição de texto extra, a troca dinâmica de tema claro/escuro e o scroll suave para navegação interna. Também usei Font Awesome para ícones, que dão suporte visual consistente e melhoram a experiência do usuário</p>
-                </div>
-            </div>
-            <div class="projeto">
-                <img src="imagens/projeto-04-links.jpg" alt="projeto links">
-                <div class="text">
-                    <p class="ano">2025</p>
-                    <h2>Projeto Links</h2>
-                    <p>Projeto que simula um celular com links para várias redes sociais, permitindo navegar entre páginas dentro do próprio dispositivo usando apenas HTML e CSS.</p>
-                    <button class="saiba-mais">Saiba mais...</button>
-                    <p class="extra-texto">O principal destaque do projeto é o uso do iframe, que permite carregar diferentes páginas sem sair do layout do celular. Os ícones das redes sociais funcionam como botões que trocam o conteúdo exibido no iframe. Todo o estilo e posicionamento do celular e dos ícones são feitos com CSS, garantindo um efeito visual interativo e responsivo.</p>
-                </div>
-            </div>
-            <div class="projeto">
-                <img src="imagens/projeto-02-cordel.jpg" alt="projeto Cordel">
-                <div class="text">
-                    <p class="ano">2025</p>
-                    <h2>Projeto Cordel</h2>
-                    <p>Um site simples que apresenta a poesia “Cordel Moderno”, combinando tipografia tradicional com um layout limpo e agradável, destacando as estrofes em seções alternadas.</p>
-                    <button class="saiba-mais">Saiba mais...</button>
-                    <p class="extra-texto">O projeto utiliza HTML5 para estruturar o conteúdo em seções (section) e CSS3 para aplicar o efeito de parallax nas seções com imagens de fundo. Esse efeito cria uma sensação de profundidade, mantendo o conteúdo do texto fixo enquanto o fundo se move ao rolar a página.</p>
-                </div>
-            </div>
-            <div class="projeto">
-                <img src="imagens/projeto-03-android.jpg" alt="projeto android">
-                <div class="text">
-                    <p class="ano">2025</p>
-                    <h2>Projeto Android</h2>
-                    <p>Projeto de artigo web responsivo, que apresenta a história do mascote do Android, combinando textos, imagens e vídeos de forma organizada e visualmente atraente.</p>
-                    <button class="saiba-mais">Saiba mais...</button>
-                    <p class="extra-texto">O projeto foi desenvolvido utilizando HTML semântico para estruturar conteúdos como header, main, article, aside e footer, garantindo acessibilidade e SEO. O CSS aplicou gradientes, variáveis CSS para cores e fontes personalizadas, e responsividade com max-width e media queries para imagens e vídeos. Além disso, o layout centralizado e sombras sutis conferem destaque ao conteúdo. O projeto foi realizado para pratica tags e a criação do primeiro conteúdo </p>
-                </div>
-            </div>
-           </section>
 
     </main>
     <footer>

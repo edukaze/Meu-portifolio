@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 
   Variáveis para cores:
   --fundo-principal
@@ -7,6 +9,16 @@
   --destaque-inverso
   --fundo-card
 */
+/*Typical device breakpoint
+-------------------------
+Pequenas telas até 600px
+Celular:600px até 768px
+Tablet:768px 992px
+desktop:992px até 1200px
+Grandes telas: acima de 1200px
+----------------------------
+ */
+/*FIRST MOBILE*/
 
 *{
   margin: 0px;
@@ -84,12 +96,12 @@ nav#menu a:hover{
 }
 main{
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: auto 90vw auto;
   grid-template-rows: auto auto;
-  justify-content: center;
+  align-items: start;
   margin: 0 auto;
   margin-top: 70px;
-  row-gap: 25px;
+  gap: 30px;
 }
 div#perfil{
   grid-column: 2;
@@ -133,12 +145,13 @@ nav#rede ul{
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin: 20px 0px 10px 0px ;
+  margin-top: 20px;
 }
 
 nav#rede a{
   color: var(--destaque);
   font-size: 3em;
+  
   font-weight: 600;
   padding: 12px 15px;
   transition: color 0.5s;
@@ -149,13 +162,15 @@ nav#rede a:hover{
 
 /*ABA DE SKILL*/
 
-
-section#skills, section#formacoes, section#projetos{
+section#detalhes{
   grid-column: 2;
+  
+}
+section#skills, section#formacoes, section#projetos{
   padding: 8px;
+  margin-bottom: 30px;
   background-color:var(--fundo-card);
   border-radius: 10px;
-  gap: 18px 28px;
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.247);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -255,10 +270,21 @@ div.projeto:hover{
   border-left-color: var(--destaque);  
   padding-left: 15px;
 }
-div.projeto >img{
-  width: 98%;
-  height: 100%;
+div.projeto img{
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  transition: 
+  transform 0.4s ease, 
+  box-shadow 0.4s ease,
+  outline 0.3s ease;
+}
+div.projeto img:hover {
+  transform: translateY(-3px) ; /* sobe e aumenta um pouco */
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.25);
+  
 }
 
 div.text{
