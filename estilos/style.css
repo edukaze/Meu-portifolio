@@ -96,12 +96,12 @@ nav#menu a:hover{
 }
 main{
   display: grid;
-  grid-template-columns: auto 90vw auto;
+  grid-template-columns: auto minmax(0, 90vw) auto;
   grid-template-rows: auto auto;
   align-items: start;
   margin: 0 auto;
   margin-top: 70px;
-  gap: 30px;
+  gap: 15px;
 }
 div#perfil{
   grid-column: 2;
@@ -293,6 +293,9 @@ div.text{
   line-height: 25px;
   margin: 10px 0px 10px 0px;
 }
+div.text p{
+  margin: 10px;
+}
 p.extra-texto{
   display: none;
   margin-top: 10px;
@@ -319,4 +322,42 @@ button.saiba-mais{
 button.saiba-mais:hover{
   text-decoration: underline;
   color: var(--destaque-inverso);
+}
+
+
+/*ABA footer*/
+
+footer {
+  background: var(--destaque);
+  color: var(--texto);
+  text-align: center;
+  font-size: 1.1em;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+footer > p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+footer.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav.footer-links > a {
+  color: var(--texto);
+  font-size: 1.4em;
+  margin-top: 5px;
+  gap: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav.footer-links > a:hover {
+  transform: translateY(-4px) scale(1.1);
+  color: var(--texto-inverso);
 }
