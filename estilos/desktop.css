@@ -55,8 +55,10 @@ main{
 
 div#perfil{
     grid-column: 2;
-    
     margin-top: 20px;
+    position: sticky;
+    top: 80px;
+    align-self: start;
 }
 
 nav#rede ul{
